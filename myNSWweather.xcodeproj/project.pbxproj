@@ -15,6 +15,7 @@
 		0462BA652650E036000BC9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462BA632650E036000BC9CA /* LaunchScreen.storyboard */; };
 		0462BA702650E036000BC9CA /* myNSWweatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462BA6F2650E036000BC9CA /* myNSWweatherTests.swift */; };
 		0462BA7B2650E036000BC9CA /* myNSWweatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462BA7A2650E036000BC9CA /* myNSWweatherUITests.swift */; };
+		0462BA8D2650E119000BC9CA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462BA8C2650E119000BC9CA /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0462BA762650E036000BC9CA /* myNSWweatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myNSWweatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0462BA7A2650E036000BC9CA /* myNSWweatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myNSWweatherUITests.swift; sourceTree = "<group>"; };
 		0462BA7C2650E036000BC9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0462BA8C2650E119000BC9CA /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,13 @@
 		0462BA572650E034000BC9CA /* myNSWweather */ = {
 			isa = PBXGroup;
 			children = (
+				0462BA8B2650E0CE000BC9CA /* API */,
+				0462BA8A2650E0C6000BC9CA /* Controller */,
+				0462BA892650E0C1000BC9CA /* View */,
+				0462BA882650E0B2000BC9CA /* Model */,
 				0462BA582650E034000BC9CA /* AppDelegate.swift */,
 				0462BA5A2650E034000BC9CA /* SceneDelegate.swift */,
 				0462BA5C2650E034000BC9CA /* ViewController.swift */,
-				0462BA5E2650E034000BC9CA /* Main.storyboard */,
 				0462BA612650E036000BC9CA /* Assets.xcassets */,
 				0462BA632650E036000BC9CA /* LaunchScreen.storyboard */,
 				0462BA662650E036000BC9CA /* Info.plist */,
@@ -126,6 +131,36 @@
 				0462BA7C2650E036000BC9CA /* Info.plist */,
 			);
 			path = myNSWweatherUITests;
+			sourceTree = "<group>";
+		};
+		0462BA882650E0B2000BC9CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0462BA8C2650E119000BC9CA /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0462BA892650E0C1000BC9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0462BA5E2650E034000BC9CA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0462BA8A2650E0C6000BC9CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0462BA8B2650E0CE000BC9CA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0462BA8D2650E119000BC9CA /* Weather.swift in Sources */,
 				0462BA5D2650E034000BC9CA /* ViewController.swift in Sources */,
 				0462BA592650E034000BC9CA /* AppDelegate.swift in Sources */,
 				0462BA5B2650E034000BC9CA /* SceneDelegate.swift in Sources */,
@@ -437,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4L8GT2Y2;
 				INFOPLIST_FILE = myNSWweather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4L8GT2Y2;
 				INFOPLIST_FILE = myNSWweather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
